@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CalculatorGUI extends JFrame {
+public class CalculadoraGUI extends JFrame {
     private final JTextField display = new JTextField();
     private double current = 0;
     private String operator = "";
     private boolean startNewNumber = true;
 
-    public CalculatorGUI() {
+    public CalculadoraGUI() {
         super("Calculadora");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(320, 420);
@@ -146,7 +146,7 @@ public class CalculatorGUI extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            CalculatorGUI calc = new CalculatorGUI();
+            CalculadoraGUI calc = new CalculadoraGUI();
             calc.setVisible(true);
         });
     }
